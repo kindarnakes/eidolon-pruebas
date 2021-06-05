@@ -1,5 +1,4 @@
-import 'react';
-import 'react-dom';
+import React from 'react'
 
 class Hola extends React.Component {
     render() {
