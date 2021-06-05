@@ -4,7 +4,7 @@ class Hola extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hola mundo desde React</h1>
+                <h1>Hola desde React</h1>
                 <p></p>
             </div>
         )
