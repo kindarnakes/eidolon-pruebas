@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 class Hola extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hola desde React</h1>
+                <h1>React Hello</h1>
                 <p></p>
             </div>
         )
