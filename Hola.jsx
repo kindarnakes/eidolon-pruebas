@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
-class Hola extends React.Component {
+export class Hola extends React.Component {
     render() {
         return (
             <div>
@@ -13,6 +12,4 @@ class Hola extends React.Component {
     }
 }
 
-let container = document.getElementById('React');
-let component = <Hola />;
-ReactDOM.render(component, container);
+export default Hola;
