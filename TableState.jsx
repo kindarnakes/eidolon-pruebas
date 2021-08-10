@@ -32,6 +32,9 @@ class Test extends React.Component {
                             });
                         }
                     }
+                    this.setState({
+                        isLoaded: true,
+                    });
                 },
                 (error) => {
                     console.log(error);
