@@ -19,7 +19,13 @@ class Test extends React.Component {
 
 
     componentDidMount() {
-        fetch("https://eidolon-midleware.herokuapp.com/servers")
+        fetch("https://adaptive-heathered-motorcycle.glitch.me/servers", {
+            method: 'GET',
+            headers: new Headers({
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://eidolonnwn2.com/',
+            })
+        })
             .then(res => res.json())
             .then(
                 (result) => {
@@ -49,7 +55,7 @@ class Test extends React.Component {
     render() {
         if (this.state.isLoaded) {
             return (
-                <table className={"margin-0-auto border-ext table-back " + (this.state.server.online ? "color-on" : "color-off")} cellspacing="0">
+                <table className={"margin-0-auto border-ext table-back " + (this.state.server.online ? "color-on" : "color-off")} cellSpacing="0">
                     <thead className="center">
                         <tr>
                             <th className="center border-int-head" colSpan="4">
