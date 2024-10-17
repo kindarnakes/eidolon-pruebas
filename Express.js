@@ -12,7 +12,7 @@ app.get('/servers', (req, res) => {
     { url: Url },
     (error, response, body) => {
       if (error || response.statusCode !== 200) {
-        return res.status(500).json({ type: 'error', message: error.message });
+        return res.status(500).json({ type: 'error', message: error });
       }
       res.json(JSON.parse(body));
     }
