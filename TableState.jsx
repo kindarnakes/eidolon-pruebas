@@ -19,7 +19,7 @@ class Test extends React.Component {
 
 
     componentDidMount() {
-        fetch("https://pruebas-4w7e.onrender.com/servers", {
+        fetch("https://www.drapnitia.es/servers-nwn2/servers", {
             method: 'GET',
             headers: new Headers({
                 'Content-Type': 'application/json',
